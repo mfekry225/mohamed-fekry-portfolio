@@ -27,7 +27,10 @@ function App() {
     } catch (err) {}
   }, [t.copyToast]);
 
-  const bgStyle = darkMode ? { background: '#050814', color: '#E2E8F0' } : { background: '#F8FAFC', color: '#0F172A' };
+  // تم تغيير الألوان هنا لتكون بنفسجية داكنة بدلاً من أسود
+  const bgStyle = darkMode 
+    ? { background: '#13081F', color: '#F3E8FF' } 
+    : { background: '#FDF4FF', color: '#1E1B2E' };
 
   return (
     <>

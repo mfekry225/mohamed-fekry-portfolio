@@ -5,15 +5,20 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { font-family: 'Tajawal', sans-serif; transition: background-color 0.4s ease, color 0.4s ease; overflow-x: hidden; }
-html[dir='ltr'] body { font-family: 'Playfair Display', 'Tajawal', sans-serif; }
+html[dir='ltr'] body { font-family: 'Playfair Display', 'Tajawal', sans-serif'; }
 
 .glass { backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
-.grid-bg { background-image: linear-gradient(rgba(74, 127, 212, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(74, 127, 212, 0.05) 1px, transparent 1px); background-size: 50px 50px; }
-.shimmer-line { background: linear-gradient(90deg, transparent, rgba(74, 127, 212, 0.6), transparent); background-size: 200% 100%; animation: shimmer 3s infinite; }
+.grid-bg { background-image: linear-gradient(rgba(168, 85, 247, 0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(168, 85, 247, 0.07) 1px, transparent 1px); background-size: 50px 50px; }
+.shimmer-line { background: linear-gradient(90deg, transparent, rgba(249, 115, 22, 0.8), transparent); background-size: 200% 100%; animation: shimmer 3s infinite; }
 .card-hover { transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
-.card-hover:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(74, 127, 212, 0.2); }
-.luxury-btn { background: linear-gradient(135deg, #4a7fd4, #2e5fb8); box-shadow: 0 4px 20px rgba(74, 127, 212, 0.4); transition: all 0.3s ease; }
-.luxury-btn:hover { box-shadow: 0 8px 30px rgba(74, 127, 212, 0.6); transform: translateY(-2px); }
+.card-hover:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(168, 85, 247, 0.25); }
+.luxury-btn { background: linear-gradient(135deg, #A855F7, #F97316); box-shadow: 0 4px 20px rgba(168, 85, 247, 0.4); transition: all 0.3s ease; }
+.luxury-btn:hover { box-shadow: 0 8px 30px rgba(249, 115, 22, 0.6); transform: translateY(-2px); }
 .orb { position: absolute; border-radius: 50%; filter: blur(90px); pointer-events: none; }
-@keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
-@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+@keyframes shimmer { 0% { background-position: '-200% 0' } 100% { background-position: '200% 0' } }
+@keyframes float { 0%, 100% { transform: 'translateY(0)' } 50% { transform: 'translateY(-20px)' } }
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #13081F; }
+::-webkit-scrollbar-thumb { background: #A855F7; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #F97316; }

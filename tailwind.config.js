@@ -5,7 +5,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        brand: { DEFAULT: '#4A7FD4', dim: '#2E5FB8', deep: '#1E3A8A' },
+        brand: { DEFAULT: '#A855F7', dim: '#9333EA', deep: '#7E22CE' },
+        accent: { DEFAULT: '#F97316', dim: '#EA580C' }
       },
       fontFamily: {
         sans: ['Tajawal', 'sans-serif'],

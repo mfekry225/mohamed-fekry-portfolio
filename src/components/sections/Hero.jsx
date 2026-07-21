@@ -45,7 +45,7 @@ export const Hero = () => {
               <img 
                 src={imgUrl} 
                 alt="Mohamed Fekry" 
-                className="w-full h-full object-cover rounded-full bg-white" 
+                className="w-full h-full object-contain rounded-full bg-white p-4" 
               />
             </div>
           </div>

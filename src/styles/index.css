@@ -15,8 +15,8 @@ html[dir='ltr'] body { font-family: 'Playfair Display', 'Tajawal', sans-serif'; 
 .luxury-btn { background: linear-gradient(135deg, #A855F7, #F97316); box-shadow: 0 4px 20px rgba(168, 85, 247, 0.4); transition: all 0.3s ease; }
 .luxury-btn:hover { box-shadow: 0 8px 30px rgba(249, 115, 22, 0.6); transform: translateY(-2px); }
 .orb { position: absolute; border-radius: 50%; filter: blur(90px); pointer-events: none; }
-@keyframes shimmer { 0% { background-position: '-200% 0' } 100% { background-position: '200% 0' } }
-@keyframes float { 0%, 100% { transform: 'translateY(0)' } 50% { transform: 'translateY(-20px)' } }
+@keyframes shimmer { 0% { background-position: -200% 0 } 100% { background-position: 200% 0 } }
+@keyframes float { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(-20px) } }
 
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: #13081F; }
